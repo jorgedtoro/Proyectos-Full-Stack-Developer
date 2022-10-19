@@ -1,0 +1,41 @@
+<article class="container">
+  <div class="row">
+    <div class="col col-left">
+      <figure>
+        <img class="card-img-top" [src]="myUser.image" alt="name" />
+      </figure>
+    </div>
+    <div class="col col-right">
+      <div class="data-user mb-5">
+        <p class="data-user__p">
+          <span class="data-user__span">Nombre: </span> {{ myUser?.first_name }}
+        </p>
+        <p class="data-user__p">
+          <span class="data-user__span">Apellido: </span>{{ myUser?.last_name }}
+        </p>
+        <p class="data-user__p">
+          <span class="data-user__span">Nombre Usuario: </span>
+          {{ myUser?.username }}
+        </p>
+        <p class="data-user__p">
+          <span class="data-user__span">Mail Usuario: </span>
+          <a [href]="'mailto:' + myUser?.email">{{ myUser?.email }}</a>
+        </p>
+      </div>
+      <div class="btn-user">
+        <button class="btn btn-delete" (click)="deleteUser(myUser.id)">
+          Eliminar
+        </button>
+        <button
+          class="btn btn-update"
+          [routerLink]="['/actualizar', myUser.id]"
+        >
+          Actualizar
+        </button>
+        <button class="btn btn-return" [routerLink]="['/home']">
+          Volver al listado
+        </button>
+      </div>
+    </div>
+  </div>
+</article>

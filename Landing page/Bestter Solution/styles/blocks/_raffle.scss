@@ -1,0 +1,52 @@
+.raffle {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: $color-blue-50;
+    gap: 40px;
+    margin-top: 44px;
+
+    @media (min-width: $mq-desktop) {
+        flex-direction: row;
+        padding: 64px;
+    }
+
+    &__w-content {
+        @media (min-width: $mq-desktop) {
+            flex-basis: 66%;
+        }
+    }
+
+    &__description {
+        margin-top: 32px;
+        // Supongo que este texto viene desde un
+        // WYSIWYG y no puedo saber qué etiquetas
+        // van a llegar
+        * + * {
+            margin-top: 16px;
+        }
+    }
+
+    &__w-form {
+        @media (min-width: $mq-desktop) {
+            flex-basis: 34%;
+        }
+    }
+
+    &__w-control {
+        margin-bottom: 16px;
+    }
+
+    &__form-label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__form-input {
+        width: 100%;
+        background-color: $color-white;
+        border: 1px solid $color-gray-300;
+        padding: 12px;
+        border-radius: 6px;
+    }
+}

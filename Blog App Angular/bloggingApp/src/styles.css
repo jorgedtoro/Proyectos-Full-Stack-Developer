@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/* LISTADO DE NOTICIAS */
+
+.listado-w {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px 20px;
+}
+
+.listado-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(33% - 20px);
+}
+.new-img{
+    height: 100%;
+ }
+
+.new-img__img {
+    max-width: 100%;
+    border-radius: 3px;
+
+}
+
+.new-title {
+    height: 100%;
+    margin: 10px 0;
+}
+.new-title__h2{
+    max-width: 100%;
+    height: 100%;
+}
+.new-content{
+    height: 100%;
+}
+.new-content__p {
+    max-width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    color: #BABABA;
+    text-align: justify;
+
+}
+
+.new-alumn {
+    max-width: 100%;
+    color: #1876D1;
+    margin-bottom: 5px;
+}
+
+.new-date {
+    max-width: 100%;
+    color: #757575;
+}
+
+
+

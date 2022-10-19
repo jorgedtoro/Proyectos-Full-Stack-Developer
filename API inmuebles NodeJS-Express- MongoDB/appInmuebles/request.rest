@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+  "piso": "1º",
+  "letra": "C",
+  "extension": 130,
+  "habitaciones": 3,
+  "alquilado": true,
+  "propietario": "Rocío Azul",
+  "mail": "rocio@mail.com"
+}
+
+###
+
+PUT http://localhost:3000/api/inmuebles/634c2b87a9f9266de2f97daa
+Content-Type: application/json
+
+{
+  "piso": "1º",
+  "letra": "C",
+  "extension": 113,
+  "habitaciones": 3,
+  "alquilado": false,
+  "propietario": "Rocío Morado",
+  "mail": "rocio@mail.com"
+}
+
+###
+DELETE http://localhost:3000/api/inmuebles/634c2b87a9f9266de2f97daa

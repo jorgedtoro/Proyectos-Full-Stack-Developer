@@ -1,0 +1,44 @@
+.card {
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.card-img-top {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    align-self: center;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.card-body-text{
+    max-height: 100%;
+}
+.card-text {
+    text-align: center;
+    
+}
+
+.card-body-icons {
+    justify-content: center;
+    cursor: pointer;
+    max-width: 100%;
+}
+.card-body-icons-text {
+    display: none;
+}
+/* MEDIA QUERIES */
+
+/* mobile first */
+/* @media(min-width:768px){
+
+} */
+
+/* desktop */
+@media (min-width: 1200px)  {
+    .card-body-icons-text {
+            display: block;
+        }
+}

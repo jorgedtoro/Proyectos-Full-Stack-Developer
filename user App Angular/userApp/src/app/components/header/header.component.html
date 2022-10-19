@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid d-flex flex-row">
+    <div class="navbar-icons d-flex flex-row">
+      <a
+        class="icons__a text-black"
+        href="https://github.com/jorgedtoro/FSD/tree/master/Actividades/Actividad%206"
+        target="_blank"
+        ><i class="fa-brands fa-github fa-2x"></i>
+      </a>
+      <i class="fa-solid fa-rocket fa-2x"></i>
+    </div>
+
+    <div class="navbar-title">
+      <ngx-typed-js
+        [strings]="['Angular App', 'User App']"
+        [backDelay]="500"
+        [startDelay]="1000"
+        [loop]="true"
+        [typeSpeed]="90"
+      >
+        <h1 class="navbar-brand">
+          Actividad 6: <span class="navbar-brand-span typing"></span>
+        </h1>
+      </ngx-typed-js>
+    </div>
+    <div><span class="typing"></span></div>
+    <div class="navbar-items navbar-menu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLinkActive="active"
+            [routerLink]="['/home']"
+            href="#"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            [routerLink]="['/registro']"
+            href="#"
+            >New User
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown menu-btn">
+      <button
+        class="btn btn-dark dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/home']" href="#">Home</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/registro']" href="#"
+            >New User</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

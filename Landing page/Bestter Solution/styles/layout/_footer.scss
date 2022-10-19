@@ -1,0 +1,11 @@
+.footer {
+    border-top: 1px solid $color-gray-300;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &__note {
+        font-weight: bold;
+    }
+}

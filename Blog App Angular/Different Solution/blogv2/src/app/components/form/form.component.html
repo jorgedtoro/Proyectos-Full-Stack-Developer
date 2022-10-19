@@ -1,0 +1,24 @@
+<aside>
+  <div class="form">
+    <div>
+      <label for="title">Titulo</label>
+      <input type="text" id="title" [(ngModel)]="newPost.title">
+    </div>
+
+    <div>
+      <label for="url">Imagen</label>
+      <input type="url" id="url" [(ngModel)]="newPost.url">
+    </div>
+
+    <div>
+      <label for="date">Fecha de publicación</label>
+      <input type="date" id="date" [(ngModel)]="newPost.date">
+    </div>
+
+    <div>
+      <label for="body">Cuerpo de texto</label>
+      <textarea name="body" id="body" [(ngModel)]="newPost.body" cols="30" rows="10"></textarea>
+    </div>
+    <button class="btn" (click)="getDataForm()">Enviar</button>
+  </div>
+</aside>

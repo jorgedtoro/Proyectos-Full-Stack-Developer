@@ -1,0 +1,57 @@
+.article-top {
+    display: flex;
+    margin-top: 42px;
+    gap: 32px;
+    flex-direction: column;
+
+    @media (min-width: $mq-desktop) {
+        flex-direction: row;
+    }
+
+    &__w-img {
+        position: relative;
+        @media (min-width: $mq-desktop) {
+            flex-basis: 40%;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__img-w-chip {
+        position: absolute;
+        top: 24px;
+        left: 20px;
+    }
+
+    &__w-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        @media (min-width: $mq-desktop) {
+            flex-basis: 60%;
+        }
+    }
+
+    &__description {
+        // Supongo que este texto viene desde un
+        // WYSIWYG y no puedo saber qué etiquetas
+        // van a llegar
+        * + * {
+            margin-top: 16px;
+        }
+    }
+
+    &__has-offer {
+        color: $color-red-600;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__w-buy {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+}

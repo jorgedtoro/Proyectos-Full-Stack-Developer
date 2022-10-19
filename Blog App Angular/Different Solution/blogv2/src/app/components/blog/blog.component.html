@@ -1,0 +1,16 @@
+<section class="blog">
+  <app-form></app-form>
+  <div class="posts">
+    <article *ngFor="let post of arrPost">
+      <h3>{{post.title}}</h3>
+      <hr>
+      <figure>
+        <img [src]="post.url" [alt]="post.title">
+      </figure>
+      <div>
+        {{post.body}}
+      </div>
+      <small>{{post.date}}</small>
+    </article>
+  </div>
+</section>

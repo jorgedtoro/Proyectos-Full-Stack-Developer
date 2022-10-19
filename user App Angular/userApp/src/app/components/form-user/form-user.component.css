@@ -1,0 +1,35 @@
+.container{
+    
+    margin-bottom: 8px;
+}
+.form-label, .form-input{
+    margin-bottom: 4px;
+    font-weight: 500;
+    
+}
+.form-input-btn{
+    margin-top: 4px;
+    width: 30%;
+    
+}
+.btn-update {
+    color: crimson;
+    background-color: #111;
+    border: none;
+}
+.btn-update:hover {
+    color: #111;
+    background-color: crimson;
+    border: 1px solid crimson;
+}
+.btn-return {
+    color: #fff;
+    background-color: gray;
+    border: none;
+}
+
+.btn-return:hover {
+    color: #111;
+    background-color: #fff;
+    border: 1px solid grey;
+}

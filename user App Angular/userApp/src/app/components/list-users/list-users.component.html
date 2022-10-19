@@ -1,0 +1,26 @@
+<section class="container">
+  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 d-flex gap-4">
+    <!--usamos directiva ngFor para pintar los users.' -->
+    <article class="col mb-4 user-w" *ngFor="let user of arrUsers">
+      <!-- las card serán las encargadas de recoger los datos de los users. -->
+      <app-card-user [myUser]="user"></app-card-user>
+    </article>
+  </div>
+</section>
+<div class="d-flex flex-row justify-content-center">
+  <button
+    class="btn btn-light border border-1 mb-4"
+    (click)="gotoPage(currentPage - 1)"
+    [disabled]="currentPage === 1"
+  >
+    Prev
+  </button>
+  <span class="border border-1 rounded p-2 mb-4 mx-2"> {{ currentPage }}</span>
+  <button
+    class="btn btn-light border border-1 mb-4"
+    (click)="gotoPage(currentPage + 1)"
+    [disabled]="currentPage === totalPages"
+  >
+    Next
+  </button>
+</div>

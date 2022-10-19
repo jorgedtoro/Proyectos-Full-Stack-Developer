@@ -1,0 +1,139 @@
+
+/* BARRA DE NAVEGACIÓN */
+.navigation {
+
+    background-color: #1876D1;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+
+}
+
+.navigation-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1876D1;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    gap: 12px;
+
+}
+
+.navigation-logo-img {
+    width: 50%;
+}
+
+.navigation-title__h1 {
+    font-size: 1.5rem;
+}
+
+.navigation-list {
+    display: flex;
+    gap: 32px;
+}
+
+.navigation-list__li {
+    list-style: none;
+}
+
+.navigation-list__li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+.icons__a{
+    color: white;
+}
+
+/* NOTICIAS */
+/* son innerHTML, el css está en styles.css */
+
+/* FORMULARIO */
+.form-w {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #757575;
+    margin: 20px;
+}
+
+.form-title {
+    padding: 10px;
+}
+
+.form-news-alumn {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-news-newsList {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.form_label {
+    margin-bottom: 5px;
+}
+
+.form_input {
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.form_area{
+    margin-bottom: 10px;
+}
+.form_btn {
+    border-radius: 6px;
+    background-color: #1876D1;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    width: 40%;
+    align-self: center;
+}
+
+/* FOOTER */
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #1876D1;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* wrapper */
+@media screen and (min-width:1200px) {
+    .wrapper {
+
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 24px;
+    }
+}

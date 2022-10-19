@@ -1,0 +1,60 @@
+<div class="container">
+  <h1 class="mb-4">{{ dinamicText }} usuario</h1>
+  <form [formGroup]="userForm" (ngSubmit)="getDataForm()">
+    <div class="mb-2 d-flex flex-column">
+      <label class="form-label fw-bold" for="first_name">Nombre Usuario</label>
+      <input
+        class="form-control"
+        type="text"
+        id="first_name"
+        formControlName="first_name"
+      />
+    </div>
+    <div class="mb-2 d-flex flex-column">
+      <label class="form-label fw-bold" for="last_name">Apellido Usuario</label>
+      <input
+        class="form-control"
+        type="text"
+        id="last_name"
+        formControlName="last_name"
+      />
+    </div>
+    <div class="mb-2 d-flex flex-column">
+      <label class="form-label fw-bold" for="email">Email Usuario</label>
+      <input
+        class="form-control"
+        type="text"
+        id="email"
+        formControlName="email"
+      />
+    </div>
+    <div class="mb-2 d-flex flex-column">
+      <label class="form-label fw-bold" for="image">Imagen Usuario</label>
+      <input
+        class="form-control"
+        type="text"
+        id="image"
+        formControlName="image"
+      />
+    </div>
+    <div class="buttons d-flex justify-content-between p-0">
+      <input
+        class="form-input-btn btn btn-update"
+        type="submit"
+        [value]="dinamicText"
+        [disabled]="!userForm.valid"
+        [ngClass]="{
+          'btn-update': userForm.valid,
+          'btn-secondary': !userForm.valid
+        }"
+      />
+      <input
+        class="form-input-btn btn btn-return"
+        value="Volver"
+        role="button"
+        [routerLink]="['/home']"
+        (click)="cancel()"
+      />
+    </div>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+.article-recommended {
+    margin-top: 44px;
+
+    &__w-articles {
+        display: flex;
+        gap: 32px;
+        margin-top: 32px;
+
+        flex-direction: column;
+
+        @media (min-width: $mq-desktop) {
+            flex-direction: row;
+        }
+    }
+
+    &__article {
+        display: flex;
+        @media (min-width: $mq-desktop) {
+            flex-basis: 25%;
+        }
+        
+    }
+}

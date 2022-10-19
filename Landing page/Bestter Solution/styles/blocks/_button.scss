@@ -1,0 +1,14 @@
+.button {
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: $color-white;
+    color: $color-gray-800;
+    border: 1px solid $color-gray-300;
+    border-radius: 8px;
+    text-decoration: none;
+
+    &--primary {
+        background-color: $color-blue-500;
+        color: $color-white;
+    }
+}

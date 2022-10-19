@@ -1,0 +1,14 @@
+/* FOOTER */
+.footer-list {
+   padding: 10px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    max-height: 100%;
+    margin: 0px;
+    margin-top: auto;
+}
+.lista-author{
+    color:crimson;
+}

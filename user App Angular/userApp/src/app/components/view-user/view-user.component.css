@@ -1,0 +1,95 @@
+
+.container{
+    margin-bottom: 16px;
+   
+    background-color: rgb(250, 244, 244);
+    border-radius: 8px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 24px;
+    
+}
+
+.col-right{
+    max-width: 100%;
+    padding: 50px;
+    border-top: 1px solid lightgrey;;
+}
+.data-user__span{
+    font-weight: 600;
+    margin-left: 8px;  
+}
+.data-user__p{
+    background-color: white;
+    border: 0.5px solid lightgray;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.btn-user{
+    display: grid;
+    gap:4px;
+    margin-bottom: 16px;
+}
+
+
+.btn-delete{
+    color: white;
+    background-color: crimson;
+    border: none;
+}
+.btn-delete:hover{
+    background-color: #fff;
+    color:black;
+    border: 1px solid crimson;
+}
+
+.btn-update{
+    color: white;
+    background-color: #111;
+    border: none;
+}
+.btn-update:hover {
+    color: crimson;
+    background-color: #fff;
+    border: 1px solid #111;
+}
+.btn-return{
+    color: #fff;
+    background-color: gray;
+    border: none;
+}
+.btn-return:hover{
+    color: #111;
+    background-color: #fff;
+    border: 1px solid grey;
+}
+
+@media(min-width: 991px){
+    .row{
+        flex-direction: row;
+    }
+    .col-right{
+        border-left: 1px solid lightgrey;
+        border-top: none;
+    }
+    .btn-user{
+        display: flex;
+       
+    }
+    .btn{
+        margin: 4px;
+    }
+}

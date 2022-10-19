@@ -1,0 +1,115 @@
+<nav class="navigation">
+  <div class="navigation-top">
+    <div class="navigation-logo">
+      <img
+        class="navigation-logo-img"
+        src="https://cdn-images-1.medium.com/max/184/1*nbJ41jD1-r2Oe6FsLjKaOg@2x.png"
+        alt="logo Angular"
+      />
+    </div>
+    <div class="navigation-title">
+      <h1 class="navigation-title__h1">Actividad 5. Blogging Angular</h1>
+    </div>
+    <div>
+      <ul class="navigation-list">
+        <li class="navigation-list__li">
+          <a href="https://blog.angular.io/" target="_blank">Blog</a>
+        </li>
+        <li class="navigation-list__li">
+          <a href="https://blog.angular.io/about" target="_blank">Acerca de</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="navigation-bottom">
+    <div class="icons">
+      <a
+        class="icons__a"
+        href="https://github.com/jorgedtoro/FSD/tree/master/Actividades/Actividad%205"
+        target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a class="icons__a" href="https://twitter.com/angular" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+
+      <a class="icons__a" href="https://angular.io/" target="_blank"
+        ><i class="fa-brands fa-angular"></i
+      ></a>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="listado-w" [innerHTML]="publicar"></div>
+  <article class="form-w">
+    <h1 class="form-title">Formulario publicación noticias</h1>
+    <div class="form-news" action="#">
+      <div class="form-news-alumn">
+        <label for="name" class="form_label">Nombre</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Ari"
+          class="form_input"
+          required
+          [(ngModel)]="name"
+        />
+        <label for="apellidos" class="form_label">Apellidos</label>
+        <input
+          type="text"
+          id="apellidos"
+          placeholder="Gold"
+          class="form_input"
+          required
+          [(ngModel)]="apellido"
+        />
+      </div>
+      <div class="form-news-newsList">
+        <label for="titulo" class="form_label">Título</label>
+        <input
+          type="text"
+          id="titulo"
+          class="form_input"
+          required
+          [(ngModel)]="titulo"
+        />
+        <label for="imagen" class="form_label">Imagen</label>
+        <input
+          type="url"
+          id="imagen"
+          placeholder="https://"
+          class="form_input"
+          required
+          [(ngModel)]="imagen"
+        />
+        <label for="noticia" class="form_label">Noticia</label>
+        <textarea
+          name="textarea"
+          rows="10"
+          cols="50"
+          class="form_area"
+          [(ngModel)]="noticia"
+        ></textarea>
+        <label for="fecha" class="form_label">Fecha publicación</label>
+        <input
+          type="date"
+          id="fecha"
+          class="form_input"
+          required
+          [(ngModel)]="fecha"
+        />
+        <button (click)="addNew()" class="form_btn btn">Publicar</button>
+      </div>
+    </div>
+  </article>
+</div>
+<footer class="footer">
+  <ul class="footer-list">
+    <li class="lista">
+      <span><i class="fa-solid fa-copyright"></i></span> Copyright
+    </li>
+    <li class="lista">Master: Full Stack Developer</li>
+    <li class="lista">Actividad 5</li>
+    <li class="lista">Jorge de Toro</li>
+  </ul>
+</footer>

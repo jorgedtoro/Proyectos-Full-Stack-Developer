@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 4. Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">agoodshop</span>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- product table -->
+      <div class="row align-items-start p-4 m-20">
+        <div class="col-8">
+          <table class="table" id="table">
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Unidad</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="body_products">
+              <!-- aquí se recogen los productos de la API -->
+              <!-- los creamos desde app.js usando un template -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CARRITO -->
+        <div class="col-4">
+          <article class="carrito flex-column bg-light p-4">
+            <h1>Total</h1>
+            <div class="productos d-flex flex-column" id="productosCarrito">
+              <!-- Aquí van los productos del carrito -->
+            </div>
+            <div
+              class="total d-flex justify-content-between align-items-center border-top m-1 p-2"
+              id="footerCarrito"
+            >
+              <p class="text-uppercase">Total</p>
+              <!-- Aquí va el total € del carrito. -->
+              <p class="fs-5" id="carrito__total">0€</p>
+            </div>
+          </article>
+          <!-- CARRITO FOOTER -->
+        </div>
+        <div class="error d-none text-danger fw-bold" id="error">
+          Soy el error
+        </div>
+      </div>
+    </main>
+
+    <!-- TEMPLATE PARA PRODUCTOS DE LA TIENDA -->
+    <template class="template_product" id="template_product_id">
+      <tr class="template_product_row" id="template_product_row_id">
+        <th scope="row" id="prueba_product">
+          <h2 id="product__title">iFhone 13 Pro</h2>
+          <p class="fs-6 fw-light">
+            Ref: <span id="product__sku">0K3QOSOV4V</span>
+          </p>
+        </th>
+        <td class="col-5 p-2 justify-content-center align-items-center">
+          <button class="btn btn-danger m-2" id="btn_minus">-</button>
+          <input
+            class="border border-secondary rounded-2 py-2 text-center col-2 fs-5 inputCantidad"
+            type="text"
+            name="cantidad"
+            id="quantity"
+            value="0"
+          />
+          <button class="btn btn-info mx-2" id="btn_add">+</button>
+        </td>
+        <td class="product__price" id="product__price">938,99€</td>
+        <td class="product__total" id="product__total">2816,97€</td>
+      </tr>
+    </template>
+
+    <!-- TEMPLATE CARRITO -->
+    <template class="template__carrito" id="template__carrito">
+      <div class="d-flex flex-row justify-content-between">
+        <p class="carrito__producto__title" id="carrito__producto__title">
+          Descripción producto
+        </p>
+        <p class="carrito__producto__total" id="carrito__producto__total">
+          Total €
+        </p>
+      </div>
+    </template>
+
+    <!-- js script -->
+    <script src="./js/carrito.js"></script>
+    <script src="./js/producto.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

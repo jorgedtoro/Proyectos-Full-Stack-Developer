@@ -1,0 +1,31 @@
+@import "normalize";
+@import "variables";
+
+// Commons
+@import "commons/wrapper";
+@import "commons/typography";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+
+// Blocks
+@import "blocks/article-recommended";
+@import "blocks/article-top";
+@import "blocks/button";
+@import "blocks/chip";
+@import "blocks/nav";
+@import "blocks/raffle";
+@import "blocks/recommended";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $font-family-base;
+    color: $color-gray-800;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
