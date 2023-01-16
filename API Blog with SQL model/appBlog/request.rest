@@ -1,0 +1,81 @@
+
+//REQUEST FOR AUTHORS
+
+
+GET http://localhost:3000/api/authors
+
+###
+
+GET http://localhost:3000/api/authors/2
+
+###
+
+POST  http://localhost:3000/api/authors
+Content-Type: application/json
+
+{
+
+ "name": "Lorena",
+ "email":"lore@gmail.com",
+ "link":"http://image5=hgjfhes"
+
+}
+
+
+###
+
+PUT http://localhost:3000/api/authors/7
+Content-Type: application/json
+
+{
+    "name":"Juan",
+    "email": "juan@hotmail.com",
+    "link":"http://iamger32=hgjfhes"
+}
+
+###
+
+DELETE http://localhost:3000/api/authors/7
+
+
+//REQUEST FOR POSTS
+
+###
+GET http://localhost:3000/api/posts
+###
+GET http://localhost:3000/api/posts/4
+
+###
+POST  http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title":"Soy el post número 6",
+    "description": "Esto es un post, y ocupa el tercer lugar",
+    "start_date": "2022-10-23 19:57:00",
+    "category":"Noticias",
+    "idAuthor": 4
+
+}
+
+###
+
+PUT http://localhost:3000/api/posts/5
+Content-Type: application/json
+
+{
+    "title":"Soy el post número 4",
+    "description": "Esto es un post, y ocupa el cuarto lugar",
+    "start_date": "2022-10-23 18:14:00",
+    "category":"Noticias",
+    "idAuthor":1
+}
+
+###
+DELETE http://localhost:3000/api/posts/5
+
+
+//GET ALL POST FROM AUTHOR
+###
+
+GET http://localhost:3000/api/posts/autor/3
